@@ -1,0 +1,26 @@
+TOPIC
+    about_AZTecDecoder
+
+SHORT DESCRIPTION
+    PowerShell Web API client for AZTecDecoder.
+
+LONG DESCRIPTION
+    AZTecDecoder talks to https://www.pelock.com/api/aztec-decoder/v1
+
+    Import the module, then either:
+
+        using module AZTecDecoder
+        $client = [AZTecDecoder]::new('YOUR-KEY')
+
+    or:
+
+        Import-Module AZTecDecoder
+        $client = New-AZTecDecoder -ApiKey 'YOUR-KEY'
+
+    An empty key is allowed for demo use. Methods: DecodeText,
+    DecodeTextFromFile, DecodeImageFromFile (multipart).
+
+    Project page: https://www.pelock.com/pl/produkty/dekoder-aztec
+
+SEE ALSO
+    New-AZTecDecoder
